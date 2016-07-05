@@ -24,7 +24,6 @@ public class RecipeMainRepositoryImpl implements RecipeMainRepository{
     public RecipeMainRepositoryImpl(EventBus eventBus, RecipeService service) {
         this.eventBus = eventBus;
         this.service = service;
-        this.recipePage = new Random().nextInt(RECIPE_RANGE);
     }
 
     @Override
